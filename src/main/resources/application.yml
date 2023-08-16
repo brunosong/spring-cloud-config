@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672 #?? amqp ???? ??
+    username: guest
+    password: guest
   profiles:
     active: native
   cloud:
@@ -12,5 +17,9 @@ spring:
         native:
           search-locations: file:///C:\Temp\CONFIG_SERVER_NATIVE_REPO
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
 
