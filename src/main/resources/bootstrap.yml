@@ -1,7 +1,8 @@
 encrypt:
   #key: abcdefghijklmnopqrstuvwxyz1234567    #키값으로 쓰기 위한것
   key-store:
-    location: file:///C:\DEV\keystore\apiEncryptionKey.jks    #private 키를 사용
+    #location: file:///C:\DEV\keystore\apiEncryptionKey.jks    #private 키를 사용
+    location: file:./apiEncryptionKey.jks    #private 키를 사용
     password: brunosong1234
     alias: apiEncryptionKey
 

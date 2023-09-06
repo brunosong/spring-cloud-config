@@ -14,8 +14,10 @@ spring:
   cloud:
     config:
       server:
-        native:
-          search-locations: file:///C:\Temp\CONFIG_SERVER_NATIVE_REPO
+#        native:
+#          search-locations: file:///C:\Temp\CONFIG_SERVER_NATIVE_REPO
+        git:
+          uri: https://github.com/brunosong/spring-cloud-config_yml
 
 management:
   endpoints:
